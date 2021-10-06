@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    
+    }
+    body{
+        background-color: cadetblue;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+
+    }
+    .concontainer{
+        background-color: coral;
+        border-radius: 10px;
+        box-shadow:0 10px 20px rgba(0, 0, 0, 0.1),
+                   0 6px 6px rgba(0, 0, 0, 0.1);
+        padding: 50px 20px;
+        max-width: 100%;
+        width: 800px;
+        text-align: center;
+    }
+    h3{
+        margin: 0;
+        letter-spacing: 2px;
+        opacity: 0.5;
+    }
+    .joke{
+        font-size: 30px;
+        line-height: 40px;
+        margin: 50px 0;
+        max-width: 600px;
+    }
+    .btn{
+        background-color:saddlebrown;
+        border: 0;
+        border-radius: 10px;
+        box-shadow:0 10px 20px rgba(0, 0, 0, 0.1),
+                   0 6px 6px rgba(0, 0, 0, 0.1);
+        color: #fff;
+        cursor:pointer ;
+        font-size: 16px;
+        padding: 14px 40px;
+    }
+    .btm:active{
+        transform: scale(0.98);
+    }
+    .btn:focus{
+        outline: 0;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h3>chucknorris.io</h3>
+        <h2>is a free JSON API for hand curated Chuck Norris facts</h2>
+        <div id="joke"class='joke'>
+            //here is the joke
+        </div>
+        <button id="get_joke" class="btn">get another joke</button>
+
+    </div>
+    <script src="api.js"></script>
+</body>
+</html>
