@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+
+    }
+
+    body {
+        background-color: rgb(221, 242, 243);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+
+    }
+
+    .concontainer {
+        /* background-image:url(./image/dog.png); */
+        background-size: 100px;
+        background-color: coral;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(29, 27, 27, 0.1),
+            0 6px 6px rgba(17, 16, 16, 0.1);
+        padding: 50px 20px;
+        max-width: 100%;
+        width: 800px;
+        text-align: center;
+    }
+
+    h3 {
+        margin: 0;
+        letter-spacing: 2px;
+        opacity: 0.5;
+    }
+
+    p {
+        margin: 0;
+        letter-spacing: 1px;
+        opacity:10;
+        color: black;
+    }
+
+ 
+    .btn {
+        background-color: saddlebrown;
+        border: 0;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+            0 6px 6px rgba(0, 0, 0, 0.1);
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 14px 40px;
+    }
+
+    .btn:active {
+        transform: scale(0.98);
+    }
+
+    .btn:focus {
+        outline: 0;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h3>The internet's biggest collection of open source dog pictures</h3><br>
+        <p>Read our documentation to find out more or try it out for yourself below.<br>
+        Want to add your dog to the collection? Submit your photos as a pull request here.<br>
+        Need more dog in your life?<br>
+        Get issue 1 of Dog CEO Zine - a quarterly business and lifestyle magazine for the modern dog.<br>
+        Featuring an exclusive interview with Scottie the Monopoly dog.<br>
+        Order your copy from Side Orders Publishing. Ships worldwide.</p><br>
+            <input type="button" id="new_dog" class="btn" value="fetch">
+            <br>
+            <br>
+            <div id="imgdiv"></div>
+
+    </div>
+    <script src="dog.js"></script>
+</body>
+
+</html>
